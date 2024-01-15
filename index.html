@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link JavaScript -->
+    <script type="text/JavaScript" src="main.js" defer></script>
+
+    <!-- Link font Awesome -->
+    
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="container py-4">
+        <label for="">Nome</label>
+        <input type="text" class="form-control mb-3 " id="user-name">
+    </div>
+
+    <div class="container py-4">
+        <label for="">Sesso</label>
+        <select type="text" class="form-select mb-3" id="user-gender">
+            <option value="Maschile">Maschile</option>
+            <option value="Femminile">Femminile</option>
+            <option value="nb">Non binario</option>
+
+        </select>    
+    </div>
+    
+
+    <div class="container py-4">
+        <button id="print-button" class="btn btn-primary">Stampa il risultato</button>
+        
+    </div>
+
+    <div class="container py-4">
+        
+        <p id="result-element" class="fs-2">
+            ...
+        </p>
+    </div>
+</body>
+</html>
