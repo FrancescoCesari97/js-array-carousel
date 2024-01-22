@@ -69,9 +69,19 @@ arrowTopEL.addEventListener("click", function () {
 
 // ! Scorrimento automatico foto
 
-setInterval(function () {
+let automaticSlider = setInterval(function () {
   arrowTopEL.click();
 }, 3000);
+
+slidesContainerEl.addEventListener("mouseover", function () {
+  clearInterval(automaticSlider);
+});
+
+slidesContainerEl.addEventListener("mouseout", function () {
+  automaticSlider = setInterval(function () {
+    arrowTopEL.click();
+  }, 3000);
+});
 
 // ! SUL CLICK DI ARROW-PREV
 arrowBotEL.addEventListener("click", function () {
