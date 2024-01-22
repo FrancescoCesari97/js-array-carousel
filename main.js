@@ -67,6 +67,12 @@ arrowTopEL.addEventListener("click", function () {
   newDot.classList.add("active");
 });
 
+// ! Scorrimento automatico foto
+
+setInterval(function () {
+  arrowTopEL.click();
+}, 3000);
+
 // ! SUL CLICK DI ARROW-PREV
 arrowBotEL.addEventListener("click", function () {
   // * recupero tutte le slides
